@@ -1,6 +1,6 @@
 FROM php:7.1.8-apache
 
-# Install GD
+# Install GD and mcrypt
 RUN apt-get update && apt-get install -y \
         libfreetype6-dev \
         libjpeg62-turbo-dev \
