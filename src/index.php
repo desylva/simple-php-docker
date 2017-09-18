@@ -1,18 +1,14 @@
 <DOCTYPE! html>
 <html>
 <body>
-<?php
-
-echo "<p>" . PHP_EOL;
-echo "Hello " . date('Y') . " world!<br>" . PHP_EOL;
-echo "PHP Version: " . PHP_VERSION . "<br>" . PHP_EOL;
-echo "</p>" . PHP_EOL;
-
-echo "<p>" . PHP_EOL;
-echo "<code>" . PHP_EOL;
-print_r(get_loaded_extensions());
-echo "</code>" . PHP_EOL;
-echo "</p>" . PHP_EOL;
-?>
+  <p>
+    Hello <?php echo date('Y') ?> world!<br>
+    PHP Version: <?php echo PHP_VERSION ?><br>
+  </p>
+  <p>
+    <code>
+      <?php print_r(get_loaded_extensions()); ?>
+    </code>
+  </p>
 </body>
 </html>
