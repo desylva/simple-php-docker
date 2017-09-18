@@ -14,6 +14,4 @@ RUN docker-php-ext-install mbstring zip pdo pdo_mysql
 
 WORKDIR /var/www/html/
 
-ADD requirements.txt /src/
-
 ADD src/ /var/www/html/
